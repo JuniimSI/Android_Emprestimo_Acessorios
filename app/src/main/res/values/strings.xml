@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Projeto Final</string>
+    <string name="action_settings">Deslogar</string>
+    <string name="title_activity_novo">Novo Contato</string>
+    <string name="title_activity_lista">Integrantes</string>
+    <string name="title_activity_list">Peças</string>
+    <string name="title_activity_expandable_list">Lista de contatos</string>
+    <string name="title_activity_edit">Integrante detalhes</string>
+    <string name="title_activity_emprestimo">Emprestimo da Roupa</string>
+    <string name="title_activity_nova">Nova Peça</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">1264281370302877</string>
+    <string name="cancel_login">Login Cancelado</string>
+    <string name="fb_login_protocol_scheme">fb829459520490036</string>
+    <string name="error_login">Error durante o Login</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_logins">Aplicativo Gerenciador do Grupo</string>
+    <string name="title_activity_servidor">ServidorActivity</string>
+</resources>

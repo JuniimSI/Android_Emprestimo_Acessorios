@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Nome para a localização"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_height="24dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="3"
+        android:id="@+id/ip"
+        android:hint="Name Location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_height="60dp" />
+</LinearLayout>

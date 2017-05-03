@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.juniorf.projetoandroidfama.MainActivity">
+
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="101"
+        android:title="Novo Contato"
+        app:showAsAction="always"
+        android:icon="@drawable/novoc"
+        />
+
+
+
+
+    <item android:title="Emprestimo"
+        android:id="@+id/emprestimo"
+        app:showAsAction="always"
+        android:orderInCategory="102"
+        android:icon="@drawable/emprestimo"
+        />
+    <item android:title="Nova Peça"
+        android:id="@+id/newpeca"
+
+        app:showAsAction="never"
+        android:orderInCategory="103"
+
+        />
+    <item android:title="Lista de Peças"
+        android:id="@+id/list_pecas"
+        app:showAsAction="never"
+        android:orderInCategory="104"
+
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="500"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_servidor"
+        android:orderInCategory="400"
+        android:title="Servidor"
+        app:showAsAction="never" />
+
+</menu>

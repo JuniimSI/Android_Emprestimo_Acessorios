@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.juniorf.mylastaplicationandroid">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.example.juniorf.projetoandroidfama.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.juniorf.projetoandroidfama.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/fundofama"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name=".NovoActivity"
+            android:label="@string/title_activity_novo"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+
+        <fragment
+            android:name=".FragmentLista"
+            android:label="@string/title_activity_lista"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ExpandableList"
+            android:label="@string/title_activity_expandable_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/title_activity_edit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListaActivity"
+            android:label="@string/title_activity_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EmprestimoActivity"
+            android:label="@string/title_activity_emprestimo"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NovaActivity"
+            android:label="@string/title_activity_nova"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!--
+        <activity
+            android:name=".LoginsActivity"
+            android:label="@string/title_activity_logins"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_logins"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity
+            android:name=".ServidorActivity"
+            android:label="@string/title_activity_servidor"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juniorf.mylastaplicationandroid.LoginActivity" />
+        </activity>
+
+        <service
+            android:name=".ServiceApp"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ServicoTest">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="SERVICO" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="FamaGroup"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".ServiceUser"
+            android:enabled="true"
+            android:exported="true"
+            android:label="ServicoTest2">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="SERVICO2" />
+            </intent-filter>
+            </service>
+
+        <receiver
+            android:name=".MyReceiverUser"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="RECEIVER2" />
+            </intent-filter>
+
+        </receiver>
+    </application>
+
+</manifest>

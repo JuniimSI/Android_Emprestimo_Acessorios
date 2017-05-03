@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:title="NONE"
+        android:id="@+id/none"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+  <!--  <item android:title="getLocation"
+        android:id="@+id/get"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />-->
+    <item android:title="Normal"
+        android:id="@+id/normal"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+    <item android:title="Terrain"
+        android:id="@+id/terrain"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+    <item android:title="Satellite"
+        android:id="@+id/satellite"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        />
+    <item android:title="Hybrid"
+        android:id="@+id/hybrid"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+</menu>

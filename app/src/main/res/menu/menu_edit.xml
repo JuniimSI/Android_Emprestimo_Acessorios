@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.juniorf.projetoandroidfama.MainActivity">
+
+    <item
+        android:id="@+id/action_del"
+        android:orderInCategory="101"
+        android:title="Novo Contato"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_dell"
+        />
+
+
+
+
+</menu>

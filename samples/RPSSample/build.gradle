@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile project(':facebook')
+}
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi', 'armeabi-v7a', 'x86'
+            universalApk true
+        }
+    }
+}

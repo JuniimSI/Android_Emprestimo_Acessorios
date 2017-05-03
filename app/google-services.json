@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "532332933400",
+    "firebase_url": "https://mylastaplicationandroid.firebaseio.com",
+    "project_id": "mylastaplicationandroid",
+    "storage_bucket": "mylastaplicationandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532332933400:android:30a1af521cb0f00a",
+        "android_client_info": {
+          "package_name": "com.example.juniorf.mylastaplicationandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532332933400-a7f5l07ii2172e1rbvdekfn36dhpns96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_nLiek6rrpDsq89qfY6psXDt99fNIl2A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
